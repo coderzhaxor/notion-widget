@@ -15,6 +15,7 @@ const Clock = () => {
 
   const [txtColor, setTxtColor] = useState("#212121");
   const [borderColor, setBorderColor] = useState("#212121");
+  const [rounded, setRounded] = useState("6px");
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -53,10 +54,14 @@ const Clock = () => {
     const borderColorParam = new URLSearchParams(window.location.search).get(
       "borderColor"
     );
+    const roundedParam = new URLSearchParams(window.location.search).get(
+      "rounded"
+    );
 
-    if (txtColorParam || borderColorParam) {
+    if (txtColorParam || borderColorParam || roundedParam) {
       setTxtColor(txtColorParam);
       setBorderColor(borderColorParam);
+      setRounded(roundedParam);
     }
   }, []);
 
@@ -67,7 +72,7 @@ const Clock = () => {
         color: txtColor,
         borderColor: borderColor,
         boxShadow: `6px 6px ${borderColor}`,
-        borderRadius: "8px",
+        borderRadius: `${rounded}px`,
       }}
     >
       <div className="inner_text">
