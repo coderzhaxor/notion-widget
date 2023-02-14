@@ -36,7 +36,9 @@ const Clock = () => {
         ? "Good morning"
         : hours >= 12 && hours < 17
         ? "Good afternoon"
-        : "Good evening"
+        : hours >= 17 && hours < 24
+        ? "Good evening"
+        : "Good night"
     );
     setDayName(time.toLocaleString("default", { weekday: "long" }));
     setDayNumber(time.getDate());
@@ -52,7 +54,7 @@ const Clock = () => {
       "borderColor"
     );
 
-    if (txtColorParam || BorderColorParam) {
+    if (txtColorParam || borderColorParam) {
       setTxtColor(txtColorParam);
       setBorderColor(borderColorParam);
     }
