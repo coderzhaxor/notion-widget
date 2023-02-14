@@ -66,7 +66,8 @@ const Clock = () => {
       style={{
         color: txtColor,
         borderColor: borderColor,
-        boxShadow: `3px 3px ${borderColor}`,
+        boxShadow: `6px 6px ${borderColor}`,
+        borderRadius: "8px",
       }}
     >
       <div className="inner_text">
