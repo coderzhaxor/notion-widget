@@ -1,0 +1,80 @@
+.custom__menu {
+    display: flex;
+    max-width: 1140px;
+    margin: 2rem auto;
+    justify-content: space-between;
+    background-color: transparent;
+    gap: 30px;
+}
+
+.custom__items {
+    display: flex;
+    height: 60px;
+    border: 2px solid #212121;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+    gap: 16px;
+}
+
+.custom__items > input {
+    width: 100%;
+}
+
+
+.custom__color {
+    background-color: transparent;
+}
+.custom__border {
+    background-color: transparent;
+}
+.custom__rounded {
+    background-color: transparent;
+}
+
+.input__color {
+    width: 25px;
+}
+
+#color {
+    height: 110%;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+#color_value, #border__range {
+    font-size: 1.5rem;
+    color: #212121;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    caret-color: #212121;
+}
+
+.range__border {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 25px;
+    background-color: #d9d9d9;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.range__border::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background-color: #222;
+    cursor: pointer;
+    border-radius: 100%;
+    border: none;
+}
+
+.range__border::-ms-thumb {
+    background-color: red;
+}
+
+
+.border__color {
+    width: 35px;
+}
