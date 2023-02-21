@@ -8,7 +8,7 @@ function Index() {
     <div className="Index">
       <header>
         <div className="line"></div>
-        <img src="./public/logo.svg" alt="logo" className="logo" />
+        <img src="./logo.svg" alt="logo" className="logo" />
         <div className="line"></div>
       </header>
       <div className="container">
